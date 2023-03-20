@@ -2,31 +2,59 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Create account</title>
+    <title>Bonas Website</title>
     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&display=swap" rel="stylesheet">
 </head>
 <body>
-    <form action="">
-        <h4>INSCRIPTION</h4>
-        <hr>
-    <div class="name-field"></div>
-             <div>
-            <label>Nom</label>
-            <input type="text">
+    <div class="full-page">
+        <div class="sub-page">
+            <div class="navigation-bar">
+                <div class="logo">
+                    <a href='photography.html'>Bonas Coding</a>
+                </div>
+                <nav>
+                    <ul id='MenuItems'>
+                        <li><a href='#'>Home</a></li>
+                        <li><a href='#'>Photos</a></li>
+                        <li><a href='#'>Services</a></li>
+                        <li><a href='#'>Contact</a></li>
+                    </ul>
+                </nav>
             </div>
-            <div>
-            <label>Prenon</label>
-            <input type="text">
+            <div class="row">
+                <div class="col-1">
+                    <div class="form-box">
+                        <div class="form">
+                            <form class="login-form">
+                                <center><h1 class="main-heading">Login Form</h1></center>
+				                <input type="text"placeholder="user name"/>
+				                <input type="password"placeholder="password"/>
+				                <button>LOGIN</button>
+				                <p class="message">Not Registered? <a href="#">Register</a></p>
+				            </form>
+                            <form class="register-form">
+                                <center><h1 class="main-heading">Register Form</h1></center>
+				                <input type="text" placeholder="user name"/>
+				                <input type="text" placeholder="email-id"/>
+				                <input type="password" placeholder="password"/>
+				                <button>REGISTER</button>
+				                <p class="message">Already Registered?<a href="#">Login</a>
+				                </p>
+				            </form>
+			             </div>
+	                </div>
+                </div>
+                <div class="col-1">
+                    <p class='defination'>This is<br>Bonas Website <br>fo Call Programers<br>Games/Web</p>
+                </div>
             </div>
-    </div>   
-            <label>Adress Email</label>
-            <input type="email">
-            <label>Mote de passe</label>
-            <input type="password">
-            <input type="submit" value="S'inscrire" >
-            <p>Vous avez deja un compte ? <a href="#">Se connecter</a></p>
-    </form>
+        </div>
+    </div>
+    <script src='https://code.jquery.com/jquery-3.2.1.min.js'>
+    </script>
+    <script>
+        $('.message a').click(function(){$('form').animate({height: "toggle",opacity: "toggle"},"slow");});
+    </script>
 </body>
 </html>
